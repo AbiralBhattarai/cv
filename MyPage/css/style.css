@@ -1,0 +1,472 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+img {
+    height: 20%;
+    width: 20%;
+}
+
+.line{
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+
+
+.nav{
+    background-color: #C8EAE2;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    grid-template-columns: 1fr 1fr ;
+    padding: 1%;
+    align-items: center;
+}
+
+
+.nav-in{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    align-self: flex-start;
+    position: relative;
+    top: 15%;
+    right: 10%;
+}
+
+
+
+.dp {
+    width: 20%;
+    height: auto;
+}
+
+
+
+.intro {
+    display: grid;
+    grid-template-areas: "bolt1" 
+                        "intro-sub"
+                        "fill"
+                        "bolt2"
+    ;
+
+}
+
+
+a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+#abt ,#skl ,#cnt{
+    color:#707070 ; 
+}
+
+#abt:hover{
+    color: #000000;
+    transition: .5s;
+    text-decoration: underline;
+}
+#skl:hover{
+    color: #000000;
+    transition: .5s;
+    text-decoration: underline;
+}
+#cnt:hover{
+    color: #000000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+
+.bolt1{
+    grid-area: bolt1;
+    width: 15%;
+    height: auto;
+    margin-top: 8rem;
+    padding-left: 5%;
+}
+.bolt2{
+    grid-area: bolt2;
+    width: 15%;
+    height: auto;
+    align-self: baseline;
+    justify-self: flex-end;
+    padding-right: 5%;
+}
+.intro-sub{
+    grid-area: intro-sub;
+    justify-self: center;
+    font-family: 'Sacramento', cursive;
+    font-weight: 1000;
+    font-size: 5.3rem;
+    color: #499ee3;
+}
+
+.fill{
+    grid-area: fill;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    color:#0a0a0a;
+    width: 30%;
+    margin: auto;
+    line-height: 2;
+}
+
+
+.skills-header {
+    display: grid;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: .1%;
+}
+
+
+.skills-sub {
+    color: white;
+    font-weight: 200;
+}
+
+
+.skills-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr), minmax(500,100);
+    grid-template-areas: "a b c"
+                          "d e f";
+    background-color: #ADDCF0;
+    padding: 5%;
+    justify-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+}
+
+
+
+
+
+.sk{
+    width: auto;
+    height: 170px;
+    padding: 20%;
+}
+
+#a{
+    grid-area: a;
+    width: auto;
+    height: 120px;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+}
+#d{
+    grid-area: d;
+}
+#e{
+    grid-area: e;
+}
+#f{
+    grid-area: f;
+}
+
+.contact-header {
+    display: grid;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: .1%;
+}
+
+
+.contact-sub {
+    color: white;
+    font-weight: 200;
+}
+
+
+
+.footer-2{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "insta github linkedin";
+    justify-items: center;
+    padding: 1%;
+    background-color: white;
+}
+
+
+
+.insta,.github,.linkedin {
+    height: 30px;
+    width: auto;
+}
+
+
+
+.insta{
+    grid-area: insta;
+    margin-right: 2%;
+}
+.github{
+    grid-area: github;
+    margin-right: 2%;
+
+}
+.linkedin{
+    grid-area: linkedin;
+    margin-right: 2%;
+}
+
+.insta:hover{
+    opacity: .65;
+    transition: 0.5s;
+}
+.github:hover{
+    opacity: .65;
+    transition: 0.5s;
+}
+.linkedin:hover{
+    opacity: .65;
+    transition: 0.5s;
+}
+
+
+
+.footer-1{
+    display: grid;
+    background-color: #4a4a4a;
+    color: white;
+    justify-items: center;
+    padding: 0%;
+    font-size: .65rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+
+
+td{
+    text-align: center;
+    line-height: 3;
+    font-size: larger;
+}
+
+
+input{
+    width: 25rem;
+    height: 3rem;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border-color: #91c494;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+table{
+    padding: 5%;
+    margin: 0 auto;
+        
+}
+
+textarea{
+    padding-right: 0%;
+    width: 25rem;
+    height: 15rem;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border-color: #91c494;
+    border-width: 3px;
+    border-style: solid;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+
+input::placeholder{
+    padding-left: 2%;
+}
+
+
+
+textarea::placeholder{
+    padding-left: 2%;
+    padding-top: 1% ;
+}
+
+.btn {
+    width: 6rem;
+    color: white;
+    background-color: #52ba58;
+    border :none;
+    border-radius: 40px;
+    margin-top: 5%;
+}
+
+
+.btn:hover{
+    background-color: #69e070;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+        .nav{
+            height: 10%;;
+            width: 100%;
+        }
+
+
+        .nav-in{
+            font-size: .8rem;
+        }
+
+        .dp{
+            width: 30%;
+            height: auto;
+        }
+        .bolt1{
+            margin-top: 20%;
+            width: 200px;
+            height: auto;
+        }
+
+
+        .bolt2{
+            width: 200px;
+            height: auto
+        }
+
+
+        .intro-sub{
+            font-size: 3rem;
+        }
+
+        .fill{
+            font-size: 1rem;
+        }
+
+        .skills-sub{
+            font-size: medium;
+        }
+
+        .sk{
+            width: 40%;
+            height: auto;
+            padding: 10%;
+        }
+        #a{
+            width: 55%;
+            height: auto;
+        }
+
+
+        .contact-sub{
+            font-size: medium;
+        }
+        table{
+            font-size: small;
+        }
+
+        input{
+            width: 20rem;
+        }
+
+        textarea{
+            width: 20rem;
+        }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    .dp{
+        width: 50%;
+        height: auto;
+    }
+    input,textarea  {
+        width: 17rem;
+    }
+
+
+    .sk{
+        width: 70%;
+        height: auto;
+        padding: 40%;
+    }
+    #a{
+        width: 95%;
+        height: auto;
+    }
+    .nav{
+        width: 100%;
+        height: 7%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    input,textarea{
+        width: 10rem;
+        font-size: small;
+    }
+
+    textarea{
+        height: 10rem;
+    }
+
+    .bolt1{
+        width: 100px;
+        height: auto;
+        margin-top: 30%;
+    }
+
+    .bolt2{
+        width: 100px;
+        height: auto;
+    }
+    .fill{
+        font-size: 1rem;
+    }
+    .intro-sub{
+        font-size: 3rem;
+    }
+
+    .nav-in{
+        font-size: .65rem;
+        
+    }
+    .nav{
+        height: 5%;
+        width: 100%;
+    }
+
+    .sk{
+        width: 90%;
+        height: auto;
+        padding: 50%;
+    }
+    #a{
+        width: 115%;
+        height: auto;
+    }
+}
